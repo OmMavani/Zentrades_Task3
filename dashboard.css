@@ -1,0 +1,87 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .dashboard-header h4 {
+    padding-left: 20px;
+  }
+
+  .company-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: #eeeeee;
+  }
+
+  .metric-box {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    box-shadow: 2px 2px 5px #aaaaaa;
+  }
+
+  .metric-box .vertical-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #4CAF50;
+  }
+
+  h4 {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  .graphs {
+    display: flex;
+  }
+
+  .graph-container {
+    flex: 1;
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  .scrollable-list {
+    max-height: 100%;
+    overflow-y: auto;
+  }
+
+  .scrollable-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .scrollable-list ul li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  canvas {
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px #aaaaaa;
+  }
+  

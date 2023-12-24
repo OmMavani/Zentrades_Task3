@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="dashboard.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="dashboard">
+  <div class="dashboard-header">
+    <h4>Company Metrics</h4>
+  </div>
+  <div class="company-metrics">
+    <div class="metric-box total-revenue" style="font-weight: bold;"><span class="vertical-line"></span>$406,411.29<br>Total Revenue</div>
+    <div class="metric-box outstanding-amount" style="font-weight: bold;"><span class="vertical-line"></span>$110,448.8 <br>Outstanding Amount</div>
+    <div class="metric-box total-jobs-avg" style="font-weight: bold;"><span class="vertical-line"></span>$620 <br> Total Jobs Avg</div>
+    <div class="metric-box memberships-sold" style="font-weight: bold;"><span class="vertical-line"></span>105 <br> Memberships Sold</div>
+    <div class="metric-box tickets-created" style="font-weight: bold;"><span class="vertical-line"></span>655 <br> Tickets Created</div>
+    <div class="metric-box jobs-completed" style="font-weight: bold;"><span class="vertical-line"></span>436 <br> Jobs Completed</div>
+    <div class="metric-box tickets-scheduled" style="font-weight: bold;"><span class="vertical-line"></span>735 <br> Tickets Scheduled</div>
+    <div class="metric-box total-canceled" style="font-weight: bold;"><span class="vertical-line"></span>65 <br> Total Canceled</div>
+  </div>
+  
+  
+  <div class="graphs">
+    <div class="graph-container">
+      <h4>Revenue By Job Location</h4>
+      <canvas id="revenue-by-location"></canvas>
+    </div>
+    <div class="graph-container">
+      <h4>Revenue by Job Type</h4>
+      <canvas id="revenue-by-job-type"></canvas>
+    </div>
+  </div>
+</div>
+<script src="dashboard.js"></script>
+</body>
+</html>
+
+
